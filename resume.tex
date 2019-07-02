@@ -1,0 +1,204 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex, hidelinks]{hyperref}
+\usepackage{fancyhdr}
+
+\usepackage[charter]{mathdesign} % Bitstream Charter
+% \usepackage{newpxtext,newpxmath} % Palatino
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.50in}
+\addtolength{\evensidemargin}{-0.50in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item{{#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemNoBullet}[2]{
+  \item[]{
+    \hspace{-9pt}\textbf{#1}{: #2 \vspace{-6pt}}
+  }
+}
+
+\newcommand{\resumeItemNoBulletTwo}[1]{
+  \vspace{-1pt}\item[]{
+    \hspace{-9pt}{#1 \vspace{0pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item[]
+  \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+      \hspace{-10pt}\textbf{#1} & #2 \\
+      \hspace{-10pt}\textit{#3} & \textit{ #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[1]{#1}\vspace{-4pt}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% custom commands
+\newcommand{\shorterSection}[1]{\vspace{-10pt}\section{#1}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center}
+   \textbf{{\huge Kush Patel}} \\  
+  kushjp2@illinois.edu $\vert$
+  (630) 523-2190 $\vert$
+  LinkedIn: {kpatel0703} $\vert$
+  Github: kushpatel0703 \\
+   6N381 Acacia Lane, Medinah, IL 60157
+\end{center}
+
+%-----------EDUCATION-----------------
+\shorterSection{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Illinois at Urbana Champaign}{Urbana, IL}
+      {Bachelors of Science in Computer Engineering}{Expected Dec 2019}{
+      \resumeItemNoBullet{Relevant Coursework}{OS Development, Algorithms and Models of Computation, Artificial Intelligence, Data Structures in C++, Distributed Systems, Database Systems, Communication Networks, Discrete Structures, Probability Principles}
+    }
+  \resumeSubHeadingListEnd
+  \vspace{2pt}
+
+%-----------SKILLS-----------------
+\shorterSection{Skills}
+  \resumeSubHeadingListStart
+    \item{
+     \textbf{Languages}{: Ruby, Python, C, C++, Javascript, HTML, CSS, SQL, Shell Scripting}
+    }
+    \vspace{-5pt}
+    \item{
+     \textbf{Frameworks}{: Rails, Django, React.js, Redux.js, GraphQL}
+    }
+    \vspace{-5pt}
+    \item{
+     \textbf{Databases}{: PostgreSQL, SQLite, mySQL, MongoDB, NoSQL}
+    }
+    \vspace{-5pt}
+    \item{
+     \textbf{Tools}{: RSpec, Git, SVN, AWS, Hadoop, Jira, Linux}
+    }
+\resumeSubHeadingListEnd
+\vspace{2pt}
+
+%-----------EXPERIENCE-----------------
+\shorterSection{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {LendingHome}{San Francisco, CA}
+      {Software Engineering Intern}{May 2019 - Aug 2019}
+      \resumeItemListStart
+        \resumeItem
+          {Automated the loan origination process platform using Ruby on Rails in an agile environment}
+        \resumeItem
+          {Developed document based data-capture methods to simplify and expedite the loan process for consumers}
+        \resumeItem
+          {Created elegant, responsive front-end components to implement new loan automation features in React and Redux}
+        \resumeItem
+          {Interfaced with PostgreSQL database and GraphQL to access and modify real-time production loan data }
+        \resumeItem
+          {Practiced test driven development principles by utilizing RSpec as a test framework tool}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {State Farm}{Urbana, IL}
+      {Data Engineering Intern}{Jan 2019 - May 2019}
+      \resumeItemListStart
+        \resumeItem
+          {Designed backend optimizations in Python to decrease performance strain on the Big Data Hadoop Network}
+        \resumeItem
+          {Built a smart reporting module to report errors from the Hadoop Network to various teams based on prior error data}
+        \resumeItem
+          {Utilized SQL to analyze customer behavior data to improve State Farm services by displaying to a Django dashboard}
+        \resumeItem
+          {Optimizations and automation saved an estimated collective 160 analyst hours per year}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Zebra Technologies}{Lincolnshire, IL}
+      {Firmware Engineering Intern}{May 2018 - Aug 2018}
+      \resumeItemListStart
+        \resumeItem
+          {Integrated photosensors to create a more accurate alert system for detecting media status on Zebra Printers}
+        \resumeItem
+          {Developed an algorithm to determine media status threshold for the printer's modified alert system}
+        \resumeItem
+          {Built an analytical framework within the printer firmware to measure and collect printer metadata using C++}
+        \resumeItem
+          {Created a database schema using SQLite on the printer's flash memory to locally collect printer metadata}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Zebra Technologies}{Lincolnshire, IL}
+      {Advanced Development Intern}{May 2017 - Aug 2017}
+      \resumeItemListStart
+        \resumeItem
+          {Improved print quality testing results by automating image analytics through Python and Shell scripting}
+        \resumeItem
+          {Collected environmental printer data using external sensors integrated in Python and stored in a PostgreSQL database}
+        \resumeItem
+          {Designed a data analytics dashboard using Django, HTML, and CSS to display data stored in an AWS Database}
+      \resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+  \vspace{2pt}
+
+%-----------PROJECTS-----------------
+\shorterSection{Projects}
+\resumeSubHeadingListStart
+    \vspace{2pt}
+    \resumeItemNoBulletTwo
+      {\textbf{ByteOS:} Developed a Linux-based kernel from scratch in C and x86 Assembly which implemented paging, system calls, scheduling, file systems, device drivers, and multiple terminals}
+    \resumeItemNoBulletTwo
+      {\textbf{Media Search Engine:} Created a Python and Django based web application to display information about a TV show or movie on an interactive UI and generate recommendations based on genre tag analysis}
+    \resumeItemNoBulletTwo
+      {\textbf{Guitar Zero:} Designed and created a SystemVerilog and C based Guitar Hero-like game on an FPGA which featured moving graphics, controller support, randomization, and sound drivers}
+    \resumeItemNoBulletTwo
+      {\textbf{Custom Wristband Printer:} Worked with the team at Project Syncere to develop a python script that allowed kids of all ages to print their own custom wristband on a Zebra printer by scanning a barcode with a wireless scanner}
+\resumeSubHeadingListEnd
+\end{document}
